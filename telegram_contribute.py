@@ -4,7 +4,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
 # 初始化机器人
-TOKEN = '7277523854:AAHUKfxzyzgXAIJ8VqPjoAuiG2Ft15Z1fu0'
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 CHANNEL_ID = '@naclyunpan'  # 替换为你的频道 Chat ID
 
 # 临时存储用户投稿内容
