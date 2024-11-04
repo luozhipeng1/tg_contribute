@@ -3,7 +3,7 @@ name: tgBot
 on:
   push:  # 当有代码推送时触发
   schedule:
-    - cron: '0 */6 * * *'  # 每三天的00:00触发一次
+    - cron: '0 */5 * * *'  # 每隔5小时触发一次
 
 jobs:
   run_demo_actions:
